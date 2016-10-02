@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Jonathan's Web Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="style.css">
+    
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+      
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  
+  <script>
+    $(document).ready(function( ) {
+        
+        $(window).load(function(){
+            var fname = $("#fname");
+            var lname = $("#lname");
+
+            if(fname.hasClass('visible')) {
+                fname.animate({
+                    left: '-1000px'
+                }, 1000).removeClass('visible');
+            } else {
+               fname.animate({
+                    left: '0px'
+                }, 1000 ).addClass('visible');
+            }
+            
+            if(lname.hasClass('visible')) {
+                lname.animate({
+                    right: '-1000px'
+                }, 1000).removeClass('visible');
+            } else {
+               lname.animate({
+                    right: '0px'
+                }, 1000 ).addClass('visible');
+            }
+            
+        });
+        
+        $("#kicker").slideDown(1000);
+        
+//========================= Scroll Functions =========================\\
+        
+        $('#pers-nav').click(function(){
+            
+            $('html, body').animate({
+            scrollTop: $("#personal").offset().top
+        }, 500);
+            
+        });
+        
+        $('#skill-nav').click(function(){
+            
+            $('html, body').animate({
+            scrollTop: $("#skills").offset().top
+        }, 750);
+            
+        });
+        
+        $('#proj-nav').click(function(){
+            
+            $('html, body').animate({
+            scrollTop: $("#projects").offset().top
+        }, 1000);
+            
+        });
+        
+        $('#cont-nav').click(function(){
+            
+            $('html, body').animate({
+            scrollTop: $("#contact").offset().top
+        }, 1000);
+            
+        });
+        
+//========================= Scroll Functions =========================\\
+    
+    }); //jq finished
+  </script>
+</head>
+<body>
+    <header id="header">
+        <div id="navbar">
+            <p id="name"><a href="#">Jonathan Fragakis</a></p>
+            <nav>
+                <a href="#personal" id="pers-nav"> Personal </a>
+                <a href="#skills" id="skill-nav"> Skills </a>
+                <a href="#projects" id="proj-nav"> Projects </a>
+                <a href="#contact" id="cont-nav"> Contact </a>
+            </nav>
+        </div>
+        <h1 class="name"><span id="fname">Jonathan</span> <span id="lname">Fragakis</span></h1>
+        <p id="kicker"> Just your average software engineer from the 6ix </p>
+        
+    </header>
+    
+    <div class="content" id="personal">
+        <div class="title-buffer"></div>
+        <h1><a name="personal"></a> Personal</h1>
+        <h3> I'm a software engineer</h3>
+        <hr>
+        <div id="about-me">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-3">
+                <h2> About Me </h2>
+                <p> I'm a 20 year old software engineer to-be. I'm currently studying at the University of Western Ontario. I have found a love for programming and engineering. I'm a tech junkie and science enthusiast. I'm an avid sports fan with a special place in my heart for the Toronto Raptors and the LA Lakers (thank Kobe for that). I listen to music nonstop, and even play a little guitar. I live to learn and grow as a person, so I'm always open to new things! </p>
+            </div>
+            <div class="col-sm-2">
+                <img id="me-pic" src="..//MyWeb/Images/me_bluffs1.1.jpg">
+            </div>
+            <div class="col-sm-1"></div>
+            <div class="col-sm-3" id="details">
+                <h2 > Details </h2>
+                <p> <b>Name: </b>Jonathan Fragakis </p>
+                <p> <b>School: </b>University of Western Ontario</p>
+                <p> <b>Location: </b> Toronto, Ontario</p>
+                <p> <b>Favourite Basketball Player: </b> Kobe Bryant </p>
+                <p> <b>Favourite Food: </b> Hamburgers </p>
+                <p> <b>Xbox vs Playstation: </b> Xbox every time </p> 
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="content" id="skills">
+        <div class="title-buffer"></div>
+        <h1> <a name="skills"></a> Skills</h1>
+        <h3> Not all the eggs are in one basket </h3>
+        <hr>
+        <div class="container"> 
+            <div class="row" style="margin: 1.2em;">
+                <p id="lang-title"> Languages </p>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+                    <p class="languages"> C#: </p>
+                </div>
+                <div class="col-sm-4">
+                    <div class="progress">
+                      <div id="csbar"></div>
+                    </div>
+                </div>
+                <div class="col-sm-2"> 
+                    <p class="languages"> Java: </p>
+                </div>
+                <div class="col-sm-4">
+                    <div class="progress">
+                      <div id="javabar"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+                    <p class="languages"> C++: </p>
+                </div>
+                <div class="col-sm-4">
+                    <div class="progress">
+                      <div id="cppbar"></div>
+                    </div>
+                </div>
+                <div class="col-sm-2"> 
+                    <p class="languages"> HTML / CSS: </p>
+                </div>
+                <div class="col-sm-4">
+                    <div class="progress">
+                      <div id="htmlbar"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+                    <p class="languages"> SQL: </p>
+                </div>
+                <div class="col-sm-4">
+                    <div class="progress">
+                      <div id="sqlbar"></div>
+                    </div>
+                </div>
+                <div class="col-sm-2"> 
+                    <p class="languages"> JavaScript: </p>
+                </div>
+                <div class="col-sm-4">
+                    <div class="progress">
+                      <div id="jsbar"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin: 1.2em;">
+                <p id="lang-title"> Libraries &amp; Frameworks </p>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+                    <p class="languages"> JQuery: </p>
+                </div>
+                <div class="col-sm-4">
+                    <div class="progress">
+                      <div id="jqbar"></div>
+                    </div>
+                </div>
+                <div class="col-sm-2"> 
+                    <p class="languages"> ASP .NET: </p>
+                </div>
+                <div class="col-sm-4">
+                    <div class="progress">
+                      <div id="aspbar"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin: 1.2em;">
+                <p id="lang-title"> Developer Tools </p>
+            </div>
+            <div class="row">
+                <div class="col-sm-4"> </div>
+                <div class="col-sm-2">
+                    <p class="languages" style="font-size: 1.4em;"> MS Visual Studios </p>
+                </div>
+                <div class="col-sm-2">
+                    <p class="languages"> MS SQL Server </p>
+                </div>
+                <div class="col-sm-4"></div>
+            </div>
+            
+            <div class="row">
+                
+                <div class="col-sm-5">
+                </div>
+                <div class="col-sm-1">
+                    <p class="languages"> Eclipse </p>
+                </div>
+                <div class="col-sm-1">
+                    <p class="languages"> Unity </p>
+                </div>
+                <div class="col-sm-5"></div>
+                
+            </div>
+        </div>
+    </div>
+    
+    <div class="content" id="projects">
+        <div class="title-buffer"></div>
+        <h1> <a name="projects"></a> Projects </h1>
+        <hr>
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-5 p-img">
+                <a href="https://github.com/jfragg/sorting-program">
+                    <div id="sortproj"> </div> 
+                </a>
+            </div>
+            <div class="col-sm-1"></div>
+            <div class="col-sm-4 desc">
+                <h2> Sorting Program </h2>
+                <p> This program was developed as a school project to demonstrate different sorting algorithms. It shows an animated illustration of how both the merge sort and selection sort work. </p>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+        
+        <div class="row" style="margin-top: 30px;">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-5 p-img">
+                <a href="">
+                    <div id="spaceproj"> </div> 
+                </a>
+            </div>
+            <div class="col-sm-1"></div>
+            <div class="col-sm-4 desc">
+                <h2> Space Shooter Game </h2>
+                <p> This thrilling, jaw-dropping space invasion game was developed as one of my in-school projects. Developed using the Unity game engine in C#, this was one of the biggest in-class projects built to date which includes many features of a modern game. Survive through 3 levels, each getting harder and harder, of alien predators and protect earth from inevitable doom!  </p>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+        
+        <div class="row" style="margin-top: 30px;">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-5 p-img">
+                <a href="https://github.com/jfragg/memory-game">
+                    <div id="memoryproj"> </div> 
+                </a>
+            </div>
+            <div class="col-sm-1"></div>
+            <div class="col-sm-4 desc">
+                <h2> Memory Card Game </h2>
+                <p> With your every move being watched, this game will have you drenched in sweat before you even know it! Another game developed in Unity for a school project. Involving my personal take on a classic game, the memory card game is fun for every one. Mismatch on a pair of cards, and you'll lose from your total score; match them all in record time! </p>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+    </div>
+    
+    <div id="contact">
+        <h1> <a name="contact"></a> Contact </h1>
+        <div id="contact-info">
+            <p> I'm always happy to talk to new people. If you'd like to contact me about anything, please feel free!</p>
+            <p><b>School Email:</b> jfragaki@uwo.ca </p>
+            <p><b>Personal Email:</b> jonathan.fragakis@gmail.com </p>
+            <div class="row" id="soc">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-2">
+                    <a href="https://github.com/jfragg">
+                        <div class="social" id="gh"></div>
+                        <p> Github </p>
+                    </a>
+                </div>
+                <div class="col-sm-2">
+                    <a href="https://ca.linkedin.com/in/jonathan-fragakis-6b3a29b5">
+                        <div class="social" id="li"></div>
+                        <p> LinkedIn</p>
+                    </a>
+                </div>
+                <div class="col-sm-2">
+                    <a href="https://www.instagram.com/jfragg/">
+                        <div class="social" id="inst"> </div>
+                        <p>Instagram</p>
+                    </a>
+                </div>
+                <div class="col-sm-2">
+                    <a href="https://twitter.com/RegularGuyJfrag">
+                        <div class="social" id="twtr"> </div>
+                        <p>Twitter</p>
+                    </a>
+                </div>
+                <div class="col-sm-2"></div>
+            </div>
+        </div>
+        
+        <footer>
+            <div class="footer">
+                <p>Copyright &copy; Jonathan Fragakis 2016 </p>
+            </div>
+        </footer>
+    </div>
+</body> 
+</html>

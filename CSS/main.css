@@ -1,0 +1,116 @@
+ponsive li icon {
+        position:absolute;
+        right:0;
+        left:0;
+    }
+    ul.topnav.responsive li {
+        float: none;
+        display: inline;
+    }
+    ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+    }
+}
+
+body {
+  font-family: 'Quango', sans-serif;
+  font-weight: 300;
+}
+
+ul.topnav{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    background-color:#333;
+}
+
+ul.topnav li {
+    float: right;
+}
+
+#site-name{
+    float: left;
+}
+
+ul.topnav a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+ul.topnav a:hover {
+    background-color: #111;
+}
+
+ul.topnav li.icon {
+    display: none;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    height: 280px;
+    width: 210px;
+    position: relative;
+    margin: 24px 24px 24px 24px;
+}
+
+.card img{
+    width: 100%;
+}
+
+.card:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card-container{
+    padding: 2px 16px;
+}
+
+#info{
+    width: 250px;
+    overflow: hidden;
+    display: none;
+    position: relative;
+    left: 250px;
+    bottom: 275px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+div.btm-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+div.btm-nav p{
+    color:aliceblue;
+    text-align: center;
+    float: left;
+    padding: 24px;
+}
+
+div.btm-nav li{
+    float: right;
+    padding: 14px 16px;
+}
+
+div.btm-nav li img {
+    width: 32px;
+    height: 32px;
+} 
+

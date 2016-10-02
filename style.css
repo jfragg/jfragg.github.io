@@ -1,0 +1,459 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    font-family:'Poiret One', sans-serif;
+}
+
+#header {
+    min-height: 100%;
+    background: url(../MyWeb/Images/toronto_skyline_blackwhite2.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    background-color: white;
+    z-index: 1;
+    border-bottom: 1px lightgray solid;
+}
+
+#name {
+    float: left;
+    display: inline-block;
+    color: black;
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Poiret One', sans-serif;
+    font-style: bold;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+#name a {
+    color: black;
+}
+
+#name a:hover{
+    text-decoration: none;
+    color: #3498DB;
+}
+
+nav {
+    float: right;
+    margin: 30px 30px 0 0;
+}
+
+nav a {
+    display: inline-block;
+    color: black;
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Poiret One', sans-serif;
+    font-style: bold;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: #3498DB;
+}
+
+#fname, #lname{
+    font-family: 'Poiret One', sans-serif;
+    letter-spacing: 0.05em;
+    font-size: 48px;
+    font-weight: 700;
+    color: #3498DB;
+}
+
+#fname {
+    position: relative;
+    left: -750px;
+}
+
+#lname {
+    position: relative;
+    right: -750px;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 100px;
+    clear: both;
+    color: black;
+}
+
+#kicker {
+    position: relative;
+    top: 15px;
+    text-align: center;
+    font-family: 'Poiret One', sans-serif;
+    color: black;
+    font-weight: 700;
+    color: darkgray;
+    font-style: bold;
+    letter-spacing: 0.05em;
+    display: none;
+}
+
+.content {
+    min-height: 100%;
+    font-family: 'Poiret One', sans-serif;
+}
+
+.content h1{
+    font-weight: 700;
+    font-size: 48px;
+    letter-spacing: 0.05em;
+    color: #3498DB;
+    padding-top: 20px;
+}
+
+.content h3{
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: darkgray;
+}
+
+.content hr{
+    margin-top: 4em;
+    margin-bottom: 4em;
+    margin-left: 10em;
+    margin-right: 10em;
+    color: black;
+    border-width: 1px;
+    display: block;
+}
+
+hr {
+    color: #3498DB;
+}
+
+.title-buffer{
+    height: 25px;
+    border-top: 4px #f2f2f2 solid;
+}
+
+#about-me {
+    margin-left: 5%;
+}
+
+#personal h2 {
+    color: #3498DB;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+#personal p {
+    color: black;
+    font-size: 16px;
+}
+
+p b {
+    color: black;
+}
+
+.col-sm-2 #me-pic {
+    display: block;
+    margin: auto auto;
+    border-radius: 50%;
+    height: 20em;
+    width: 20em;
+    border: solid #3498DB 2px;
+}
+
+#details {
+    margin-left: 5%;
+}
+
+p.languages {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#lang-title{
+    font-size: 2em;
+    text-align: center;
+}
+
+#skills h1, p{
+    color: #3498DB;
+}
+
+.eggs li img{
+    height: 2.5em;
+    width: 2.5em;
+}
+
+#footer {
+    height: 100px;
+    background: url(..//MyWeb/Images/toronto_skyline_blackwhite2.jpg);
+    background-size: contain;
+}
+
+.col-sm-6 ul {
+    float: right;
+    margin-top: 2em;
+}
+
+ul li {
+    display: inline-block;
+}
+
+li {
+    border-radius: 50%;
+    border-style: none;
+    align-content: center;
+    display: inline-block;
+    margin: 10px;
+    background-color: white;
+}
+
+.footer-links li img:hover{
+    -webkit-filter: grayscale(0%);
+    filter:grayscale(0%);
+}
+
+.footer-links li img {
+    -webkit-filter: grayscale(100%);
+    filter:grayscale(100%);
+    height: 3em;
+    width: 3em;
+}
+
+.col-sm-4 .progress {
+    position: relative;
+    top: 10px;
+    width: 80%;
+    height: 10px;
+    background-color: #ddd;
+    margin-left: 10%;
+}
+
+#csbar {
+    position: absolute;
+    width: 97%;
+    height: 100%;
+    background-color: #3498DB;
+}
+
+#javabar {
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    background-color: #3498DB;
+}
+
+#cppbar {
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    background-color: #3498DB;
+}
+
+#htmlbar {
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    background-color: #3498DB;
+}
+
+#sqlbar {
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    background-color: #3498DB;
+}
+
+#jsbar {
+    position: absolute;
+    width: 75%;
+    height: 100%;
+    background-color: #3498DB;
+}
+
+#jqbar {
+    position: absolute;
+    width: 65%;
+    height: 100%;
+    background-color: #3498DB;
+}
+
+#aspbar{
+    position: absolute;
+    width: 95%;
+    height: 100%;
+    background-color: #3498DB;
+}
+
+#sortproj {
+    height: 250px;
+    width: 400px;
+    background-image: url(..//MyWeb/Images/unsorted-assmt.png);
+    background-size: cover;
+    margin-left: 30px;
+    border: solid lightgray 1px;
+}
+
+#sortproj:hover {
+    background-image: url(..//MyWeb/Images/sorted-assmt.png);
+}
+
+#spaceproj {
+    height: 250px;
+    width: 400px;
+    background-image: url(..//MyWeb/Images/space-home.png);
+    background-size: cover;
+    margin-left: 30px;
+    border: solid lightgray 1px;
+}
+
+#spaceproj:hover {
+    background-image: url(..//MyWeb/Images/space-game.png);
+}
+
+#memoryproj {
+    height: 250px;
+    width: 400px;
+    background-image: url(..//MyWeb/Images/memory-home.png);
+    background-size: contain;
+    margin-left: 30px;
+    border: solid lightgray 1px;
+}
+
+#memoryproj:hover {
+    background-image: url(..//MyWeb/Images/memory-card.png);
+}
+
+.p-img {
+    border-right: 1px lightgray solid;
+}
+
+.desc {
+    vertical-align: top;
+}
+
+#contact-info {
+    width: 50%;
+    margin: auto;
+}
+
+#contact h1 {
+    color: white;
+    margin-bottom: 50px;
+    text-align: center;
+    height: 0;
+}
+
+#contact-info p {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#contact-info p b {
+    color: white;
+    font-size: 20px;
+}
+
+#contact-info p:first-child {
+    text-align: center;
+}
+
+#contact {
+    min-height: 75%;
+    font-family: 'Poiret One', sans-serif;
+    background-color: #3498DB;
+}
+
+#soc{
+    margin: 50px auto auto auto;
+}
+
+#soc p {
+    font-size: 14px;
+    width: 60px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.social {
+    height: 60px;
+    width: 60px;
+}
+
+#gh {
+    background-image: url(..//BSWeb/Images/Github.png);
+    background-size: contain;
+}
+
+#li {
+    background-image: url(..//BSWeb/Images/Linkedin.png);
+    background-size: contain;
+}
+
+#fb {
+    background-image: url(..//BSWeb/Images/Facebook.png);
+    background-size: contain;
+}
+
+#inst {
+    background-image: url(..//BSWeb/Images/Instagram.png);
+    background-size: contain;
+}
+
+#twtr {
+    background-image: url(..//BSWeb/Images/Twitter.png);
+    background-size: contain;
+}
+
+.footer {
+    height: 50px;
+    border-top: white 2px solid;
+    text-align: center;
+}
+
+.footer p {
+    color: white;
+    margin-top: 20px;
+}
+
+
+@media screen and (max-width: 768px) {
+   #sortproj {
+        height: 150px;
+        width: 250px;
+        margin: 0 100px;
+    }
+    
+    #spaceproj {
+        height: 150px;
+        width: 250px;
+        margin: 0 100px;
+    }
+    
+    #memoryproj {
+        height: 150px;
+        width: 250px;
+        margin: 0 100px;
+    }
+    
+    .col-sm-4 {
+        text-align: center;
+    }
+    
+    #contact-info {
+        width: 75%;
+    }
+}
