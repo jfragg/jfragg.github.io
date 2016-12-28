@@ -1,92 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Jonathan's Web Portfolio</title>
+  <title>Jonathan Fragakis | Software Engineer </title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <link rel="stylesheet" href="style.css">
     
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
       
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="myFunctions.js"></script>
   
-  <script>
-    $(document).ready(function( ) {
-        
-        $(window).load(function(){
-            var fname = $("#fname");
-            var lname = $("#lname");
-
-            if(fname.hasClass('visible')) {
-                fname.animate({
-                    left: '-1000px'
-                }, 1000).removeClass('visible');
-            } else {
-               fname.animate({
-                    left: '0px'
-                }, 1000 ).addClass('visible');
-            }
-            
-            if(lname.hasClass('visible')) {
-                lname.animate({
-                    right: '-1000px'
-                }, 1000).removeClass('visible');
-            } else {
-               lname.animate({
-                    right: '0px'
-                }, 1000 ).addClass('visible');
-            }
-            
-        });
-        
-        $("#kicker").slideDown(1000);
-        
-//========================= Scroll Functions =========================\\
-        
-        $('#pers-nav').click(function(){
-            
-            $('html, body').animate({
-            scrollTop: $("#personal").offset().top
-        }, 500);
-            
-        });
-        
-        $('#skill-nav').click(function(){
-            
-            $('html, body').animate({
-            scrollTop: $("#skills").offset().top
-        }, 750);
-            
-        });
-        
-        $('#proj-nav').click(function(){
-            
-            $('html, body').animate({
-            scrollTop: $("#projects").offset().top
-        }, 1000);
-            
-        });
-        
-        $('#cont-nav').click(function(){
-            
-            $('html, body').animate({
-            scrollTop: $("#contact").offset().top
-        }, 1000);
-            
-        });
-        
-//========================= Scroll Functions =========================\\
-    
-    }); //jq finished
-  </script>
 </head>
 <body>
     <header id="header">
         <div id="navbar">
-            <p id="name"><a href="#">Jonathan Fragakis</a></p>
             <nav>
                 <a href="#personal" id="pers-nav"> Personal </a>
                 <a href="#skills" id="skill-nav"> Skills </a>
@@ -111,7 +42,7 @@
                 <p> I'm a 20 year old software engineer to-be. I'm currently studying at the University of Western Ontario. I have found a love for programming and engineering. I'm a tech junkie and science enthusiast. I'm an avid sports fan with a special place in my heart for the Toronto Raptors and the LA Lakers (thank Kobe for that). I listen to music nonstop, and even play a little guitar. I live to learn and grow as a person, so I'm always open to new things! </p>
             </div>
             <div class="col-sm-2">
-                <img id="me-pic" src="..//MyWeb/Images/me_bluffs1.1.jpg">
+                <img id="me-pic" src="jfragg.github.io/Images/me_bluffs1.1.jpg">
             </div>
             <div class="col-sm-1"></div>
             <div class="col-sm-3" id="details">
@@ -130,7 +61,6 @@
     <div class="content" id="skills">
         <div class="title-buffer"></div>
         <h1> <a name="skills"></a> Skills</h1>
-        <h3> Not all the eggs are in one basket </h3>
         <hr>
         <div class="container"> 
             <div class="row" style="margin: 1.2em;">
@@ -294,7 +224,7 @@
     <div id="contact">
         <h1> <a name="contact"></a> Contact </h1>
         <div id="contact-info">
-            <p> I'm always happy to talk to new people. If you'd like to contact me about anything, please feel free!</p>
+            <p> I'm always happy to talk to new people. If you would like to contact me about anything, please feel free!</p>
             <p><b>School Email:</b> jfragaki@uwo.ca </p>
             <p><b>Personal Email:</b> jonathan.fragakis@gmail.com </p>
             <div class="row" id="soc">

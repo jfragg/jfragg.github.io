@@ -1,18 +1,4 @@
-$(document).ready(function( ) {
-      /*  var slideIn = function(name, direction){
-            if(name.hasClass('visible')) {
-                name.animate({
-                direction: '-1000px'
-                }, 1000).removeClass('visible');
-            } else {
-                name.animate({
-                    direction: '0px'
-                }, 1000 ).addClass('visible');
-            }   
-        };*/
-        
-        /*slideIn("fname", "left");
-            slideIn(lname, "right");*/
+ $(document).ready(function( ) {
         
         $(window).load(function(){
             var fname = $("#fname");
@@ -41,5 +27,41 @@ $(document).ready(function( ) {
         });
         
         $("#kicker").slideDown(1000);
+        
+//========================= Scroll Functions =========================\\
+        
+        $('#pers-nav').click(function(){
+            
+            $('html, body').animate({
+            scrollTop: $("#personal").offset().top
+        }, 500);
+            
+        });
+        
+        $('#skill-nav').click(function(){
+            
+            $('html, body').animate({
+            scrollTop: $("#skills").offset().top
+        }, 750);
+            
+        });
+        
+        $('#proj-nav').click(function(){
+            
+            $('html, body').animate({
+            scrollTop: $("#projects").offset().top
+        }, 1000);
+            
+        });
+        
+        $('#cont-nav').click(function(){
+            
+            $('html, body').animate({
+            scrollTop: $("#contact").offset().top
+        }, 1000);
+            
+        });
+        
+//========================= Scroll Functions =========================\\
     
     }); //jq finished

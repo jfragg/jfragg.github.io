@@ -7,7 +7,7 @@ body {
 
 #header {
     min-height: 100%;
-    background: url(../MyWeb/Images/toronto_skyline_blackwhite2.jpg);
+    background: url(Images/toronto_skyline_blackwhite2.jpg);
     background-size: cover;
     background-position: center center;
 }
@@ -34,15 +34,6 @@ body {
     font-style: bold;
     text-transform: uppercase;
     margin-top: 30px;
-}
-
-#name a {
-    color: black;
-}
-
-#name a:hover{
-    text-decoration: none;
-    color: #3498DB;
 }
 
 nav {
@@ -198,7 +189,7 @@ p.languages {
 
 #footer {
     height: 100px;
-    background: url(..//MyWeb/Images/toronto_skyline_blackwhite2.jpg);
+    background: url(Images/toronto_skyline_blackwhite2.jpg);
     background-size: contain;
 }
 
@@ -300,40 +291,40 @@ li {
 #sortproj {
     height: 250px;
     width: 400px;
-    background-image: url(..//MyWeb/Images/unsorted-assmt.png);
+    background-image: url(Images/unsorted-assmt.png);
     background-size: cover;
     margin-left: 30px;
     border: solid lightgray 1px;
 }
 
 #sortproj:hover {
-    background-image: url(..//MyWeb/Images/sorted-assmt.png);
+    background-image: url(Images/sorted-assmt.png);
 }
 
 #spaceproj {
     height: 250px;
     width: 400px;
-    background-image: url(..//MyWeb/Images/space-home.png);
+    background-image: url(Images/space-home.png);
     background-size: cover;
     margin-left: 30px;
     border: solid lightgray 1px;
 }
 
 #spaceproj:hover {
-    background-image: url(..//MyWeb/Images/space-game.png);
+    background-image: url(Images/space-game.png);
 }
 
 #memoryproj {
     height: 250px;
     width: 400px;
-    background-image: url(..//MyWeb/Images/memory-home.png);
+    background-image: url(Images/memory-home.png);
     background-size: contain;
     margin-left: 30px;
     border: solid lightgray 1px;
 }
 
 #memoryproj:hover {
-    background-image: url(..//MyWeb/Images/memory-card.png);
+    background-image: url(Images/memory-card.png);
 }
 
 .p-img {
@@ -394,27 +385,27 @@ li {
 }
 
 #gh {
-    background-image: url(..//BSWeb/Images/Github.png);
+    background-image: url(Images/Github.png);
     background-size: contain;
 }
 
 #li {
-    background-image: url(..//BSWeb/Images/Linkedin.png);
+    background-image: url(Images/Linkedin.png);
     background-size: contain;
 }
 
 #fb {
-    background-image: url(..//BSWeb/Images/Facebook.png);
+    background-image: url(Images/Facebook.png);
     background-size: contain;
 }
 
 #inst {
-    background-image: url(..//BSWeb/Images/Instagram.png);
+    background-image: url(Images/Instagram.png);
     background-size: contain;
 }
 
 #twtr {
-    background-image: url(..//BSWeb/Images/Twitter.png);
+    background-image: url(Images/Twitter.png);
     background-size: contain;
 }
 
@@ -455,5 +446,9 @@ li {
     
     #contact-info {
         width: 75%;
+    }
+    
+    nav a {
+        font-size: 14px;
     }
 }
