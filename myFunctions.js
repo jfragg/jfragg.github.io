@@ -33,32 +33,32 @@
         $('#pers-nav').click(function(){
             
             $('html, body').animate({
-            scrollTop: $("#personal").offset().top
-        }, 500);
+                scrollTop: $("#personal").offset().top
+            }, 500);
             
         });
         
         $('#skill-nav').click(function(){
             
             $('html, body').animate({
-            scrollTop: $("#skills").offset().top
-        }, 750);
+                scrollTop: $("#skills").offset().top
+            }, 750);
             
         });
         
         $('#proj-nav').click(function(){
             
             $('html, body').animate({
-            scrollTop: $("#projects").offset().top
-        }, 1000);
+                scrollTop: $("#projects").offset().top
+            }, 1000);
             
         });
         
         $('#cont-nav').click(function(){
             
             $('html, body').animate({
-            scrollTop: $("#contact").offset().top
-        }, 1000);
+                scrollTop: $("#contact").offset().top
+            }, 1000);
             
         });
         
